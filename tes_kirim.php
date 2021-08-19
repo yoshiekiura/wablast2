@@ -10,10 +10,10 @@ if(post("pesan")){
     $nomor = post("nomor");
     $pesan = post("pesan");
     
-    toastr_set("error", "fitur dimatikan sementara"); 
+    //toastr_set("error", "fitur dimatikan sementara"); 
 
     $res = sendMSG($nomor, $pesan);
-    if($res['status'] === "true"){
+    if($res['status'] == "true"){
         toastr_set("success", "Pesan terkirim"); 
     }else{
         toastr_set("error", $res['msg']); 

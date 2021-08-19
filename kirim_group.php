@@ -115,7 +115,7 @@ if(get("act") == "hd"){
                         <h3>Kirim Group</h3>
                         <div class="crumbs">
                             <ul id="breadcrumbs" class="breadcrumb">
-                                <li><a href="index.html"><i class="flaticon-home-fill"></i></a></li>
+                                <li><a href="index.php"><i class="flaticon-home-fill"></i></a></li>
                                 <li class="active"><a href="#">Kirim Group</a> </li>
                                 
                             </ul>
@@ -133,12 +133,12 @@ if(get("act") == "hd"){
                                         <div class="row">
                                             <!-- Button trigger modal -->
                                            <div class="col-6 text-left">
-                                                <button type="button" class="btn btn-primary btn-rounded ml-4 mt-4 mb-4" data-toggle="modal" data-target="#addModal">
+                                                <button type="button" class="btn btn-primary btn-rounded ml-4 mt-4 mb-4" id="kirim" data-toggle="modal" data-target="#addModal">
                                                 <i class="fas fa-plus-circle"></i> Tambah Data
                                                 </button>
                                            </div>
                                            <div class="col-6 text-right">
-                                                <a href="kirim_group.php?act=hd" class="btn btn-danger btn-rounded mt-4 mb-4">
+                                                <a href="kirim_group.php?act=hd" class="btn btn-danger btn-rounded mr-4 mt-4 mb-4">
                                                 <i class="fas fa-trash"></i> Hapus Semua
                                                 </a>
                                            </div>
@@ -187,7 +187,8 @@ if(get("act") == "hd"){
                                             if($row['status'] == "GAGAL"){
                                                 echo '<td class="button-container-'.$row['id'].'"><a style="margin:5px" class="btn btn-success" href="kirim.php?act=ku&id='.$row['id_blast'].'">Kirim Ulang</a><a style="margin:5px" class="btn btn-danger" href="hapus_pesan.php?id='.$row['id'].'">Hapus</a></td>';
                                             }else{
-                                                echo '<td class="button-container-'.$row['id'].'"><a class="btn btn-danger" href="kirim_group.php?act=del&id='.$row['id'].'">Hapus</a></td>';
+                                                echo '<td class="button-container-'.$row['id'].'">
+                                                <a href="kirim_group.php?act=del&id='.$row['id'].'"><i class="flaticon-delete-can-fill-1 t-icon t-hover-icon"></i></a></td>';
                                             }
                                             echo '</tr>';
                                         }
@@ -246,7 +247,7 @@ if(get("act") == "hd"){
                 <br>
                 <label>Target</label>
                 <br>
-                <select class="form-control js-example-basic-multiple" name="target[]" id="target" multiple="multiple" style="width: 100%" required>
+                <select class="form-control tagging" name="target[]" id="target" multiple="multiple" style="width: 100%;">
                 </select>
                 <br>
         </div>
@@ -259,6 +260,11 @@ if(get("act") == "hd"){
     </div>
     </div>
 
+    <script>
+    $(document).ready(function() {
+
+    });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script>

@@ -239,7 +239,6 @@ if(get("act") == "hd"){
                     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                         <div class="statbox widget box box-shadow">
                             <div class="widget-header">
-                                <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                                         <div class="row">
                                             <!-- Button trigger modal -->
@@ -252,18 +251,17 @@ if(get("act") == "hd"){
                                                 </button>
                                            </div>
                                            <div class="col-6 text-right">
-                                                <button type="button" class="btn btn-danger btn-rounded mt-4 mb-4" data-toggle="modal" data-target="#exampleModal">
+                                                <a href="kirim.php?act=hd" class="btn btn-danger btn-rounded mt-4 mb-4">
                                                 <i class="fas fa-trash"></i> Hapus Data (terkirim)
-                                                </button>
+                                                </a>
                                            </div>
                                             <!-- Modal -->
                                         </div>
                                     </div>
-                                </div>
                             </div>
                             <div class="widget-content widget-content-area">
                                 <div class="table-responsive mb-4">
-                                    <table id="zero-config" class="table table-striped table-hover table-bordered" style="width:100%">
+                                    <table id="zero-config" class="table table-striped table-hover table-bordered">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
@@ -309,7 +307,8 @@ if(get("act") == "hd"){
                                                     if($row['status'] == "GAGAL"){
                                                         echo '<td class="button-container-'.$row['id'].'"><a style="margin:5px" class="btn btn-success" href="kirim.php?act=ku&id='.$row['id_blast'].'">Kirim Ulang</a><a style="margin:5px" class="btn btn-danger" href="hapus_pesan.php?id='.$row['id'].'">Hapus</a></td>';
                                                     }else{
-                                                        echo '<td class="button-container-'.$row['id'].'"><a class="btn btn-danger" href="hapus_pesan.php?id='.$row['id'].'">Hapus</a></td>';
+                                                        echo '<td class="button-container-'.$row['id'].'">
+                                                        <a href="hapus_pesan.php?id='.$row['id'].'"><i class="flaticon-delete-can-fill-1 t-icon t-hover-icon"></i></a></td>';
                                                     }
                                                     echo '</tr>';
                                                 }

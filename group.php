@@ -177,7 +177,7 @@ if(get("act") == "edit"){
                     <br>
                     <label>Anggota</label>
                     <br>
-                    <select class="form-control js-example-basic-multiple" name="anggota[]" multiple="multiple" style="width: 100%">
+                    <select class="form-control tagging" name="anggota[]" multiple="multiple">
                         <?php
                             if($_SESSION['level'] == "1"){
                                 $q = mysqli_query($koneksi, "SELECT * FROM nomor");
@@ -223,7 +223,7 @@ if(get("act") == "edit"){
                     <br>
                     <label>Anggota</label>
                     <br>
-                    <select class="form-control js-example-basic-multiple" name="anggota[]" id="anggota_group_edit" multiple="multiple" style="width: 100%">
+                    <select class="form-control tagging" name="anggota[]" id="anggota_group_edit" multiple="multiple">
                         <?php
                             if($_SESSION['level'] == "1"){
                                 $q = mysqli_query($koneksi, "SELECT * FROM nomor");
@@ -251,11 +251,10 @@ if(get("act") == "edit"){
     </div>
 <!-- endmodals -->
 
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script>
     $(document).ready(function() {
-        $('.js-example-basic-multiple').select2({
-            dropdownAutoWidth : true
+        $('.tagging').select2({
+            dropdownAutoWidth : false
         });
     });
     </script>

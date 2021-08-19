@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="vendor/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="vendor/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
@@ -36,15 +37,20 @@
     <link rel="stylesheet" href="vendor/plugins/font-icons/fontawesome/css/brands.css">
     <link rel="stylesheet" href="vendor/plugins/font-icons/fontawesome/css/fontawesome.css">
 
-     <!-- BEGIN THEME GLOBAL STYLES -->
-    <link href="vendor/plugins/animate/animate.css" rel="stylesheet" type="text/css" />
-    <script src="vendor/plugins/sweetalerts/promise-polyfill.js"></script>
-    <link href="vendor/plugins/sweetalerts/sweetalert2.min.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/assets/css/ui-kit/custom-sweetalert.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    
+    <!-- toastr -->
+    <link href="vendor/plugins/notification/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <!-- END THEME GLOBAL STYLES -->
+
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link rel="stylesheet" type="text/css" href="vendor/plugins/select2/select2.min.css">
+    <!--  END CUSTOM STYLE FILE  -->
+
+    
 
      <!--  BEGIN CUSTOM STYLE FILE  -->
     <style>

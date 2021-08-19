@@ -38,7 +38,7 @@
                         <i class="mr-1 flaticon-user-6"></i> <span><?= $_SESSION['username'] ?></span>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="user_login_1.html">
+                    <a class="dropdown-item" href="logout.php">
                         <i class="mr-1 flaticon-power-button"></i> <span>Log Out</span>
                     </a>
                 </div>

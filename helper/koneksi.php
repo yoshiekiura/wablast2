@@ -1,11 +1,11 @@
 <?php
 
 $host = "localhost";
-$username = "lanayspc_root";
-$password = "Lanaysps187597";
-$db = "lanayspc_wablast";
+$username = "root";
+$password = "";
+$db = "wa_blast";
 
 $koneksi = mysqli_connect($host, $username, $password, $db) or die("GAGAL");
 
-$base_url = "https://wablast.lanaysp.com";
+$base_url = "http://wablas.test/";
 date_default_timezone_set('Asia/Jakarta');

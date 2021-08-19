@@ -21,85 +21,72 @@ if(post("username")){
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Wa Blast - Login</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="vendor/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/assets/css/users/login-2.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->    
 </head>
+<body class="login">
 
-<body class="bg-gradient-primary">
+    <form class="form-login" method="POST">
+        <div class="row">
+            
+            <div class="col-md-12 text-center mb-4">
+                <img alt="logo" src="vendor/assets/img/logo-3.png" class="theme-logo">
+            </div>
 
-    <div class="container">
+            <div class="col-md-12">
 
-        <!-- Outer Row -->
-        <div class="row justify-content-center">
-
-            <div class="col-xl-10 col-lg-12 col-md-9">
-
-                <div class="card o-hidden border-0 shadow-lg my-5">
-                    <div class="card-body p-0">
-                        <!-- Nested Row within Card Body -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="p-5">
-                                    <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
-                                    </div>
-                                    <form class="user" method="POST">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Username..." name="username">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password" name="password">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="icon-inputEmail"><i class="flaticon-user-7"></i> </span>
                     </div>
+                    <input type="text" id="inputEmail" name="username" class="form-control" placeholder="Email Address" aria-describedby="inputEmail" required >
                 </div>
+
+                <label for="inputPassword" class="sr-only">Password</label>                
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="icon-inputPassword"><i class="flaticon-key-2"></i> </span>
+                    </div>
+                    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" aria-describedby="inputPassword" required >
+                </div>
+                
+
+                <button class="btn btn-lg btn-gradient-success btn-block btn-rounded mb-4 mt-5" type="submit">Login</button>
+
+                <!-- <div class="forgot-pass text-center">
+                    <a href="user_pass_recovery_2.html">Forgot Password ?</a>
+                </div> -->
 
             </div>
 
+            <div class="col-md-12">
+                <div class="login-text text-center">
+                    <p class="mt-3 text-white">New Here? <a href="" class=""> <u>Register</u> </a> a new user !</p>
+                </div>
+            </div>
+
         </div>
+    </form>   
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="vendor/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="vendor/assets/bootstrap/js/popper.min.js"></script>
+    <script src="vendor/assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-    </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
     <script>
         <?php
 
@@ -108,5 +95,4 @@ if(post("username")){
         ?>
     </script>
 </body>
-
 </html>

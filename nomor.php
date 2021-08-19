@@ -133,7 +133,7 @@ if(get("act") == "delete_all"){
                                             echo '<td>'.$row['id'].'</td>';
                                             echo '<td>'.$row['nama'].'</td>';
                                             echo '<td>'.$row['nomor'].'</td>';
-                                            echo '<td><a href="nomor.php?act=hapus&id='.$row['id'].'"><i class="flaticon-edit-fill t-icon t-hover-icon"></i></a></td>';
+                                            echo '<td><a href="nomor.php?act=hapus&id='.$row['id'].'"><i class="flaticon-delete-can-fill-1 t-icon t-hover-icon"></i></a></td>';
                                              echo '</tr>';
                                         }
 

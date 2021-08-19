@@ -2,7 +2,8 @@ html, body { height: 100%; }
 body {
     padding-top: 40px;
     padding-bottom: 40px;
-    background: #1b1c25 url("../../../assets/img/bg-1920x1080.jpg") no-repeat fixed center;
+    /* background: #1b1c25 url("../../../assets/img/bg-1920x1080.jpg") no-repeat fixed center; */
+    background-image: linear-gradient(to right top, #38a96c, #29ac5e, #1baf4c, #11b236, #11b411);
     background-size: cover;
     display: -ms-flexbox;
     display: flex;
@@ -75,11 +76,11 @@ body {
 .form-login .checkbox .custom-checkbox .custom-control-input:checked~.custom-control-label::before { background-color: #fe998b; }
 .form-login .social-icons h5 { color: #494949; font-weight: 600; }
 .login-text p a {
-    color: #af96ff;
+    color: #0984e3;
     font-weight: 600;
     margin-left: 5px;
     margin-right: 5px;
 }
-.login-text p a:hover { color: #fe9a8b; }
+.login-text p a:hover { color: #ffff; }
 .btn-gradient-warning { padding: 12px 15px 12px 15px; }
 .custom-control-label::before { background-color: rgba(255, 255, 255, 0.6); }
