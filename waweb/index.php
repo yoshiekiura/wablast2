@@ -62,11 +62,11 @@ if($login == 0){
       <a class="btn btn-block btn-refresh btn-primary" style="font-size:20px"> refresh </a>
 
     </section>
-    <!--
+    
     <section class="common-search">
         <input type="search" class="text-input" placeholder="Search or start new chat">
     </section>
-    -->
+   
     <section class="chats">
       <ul class="chats-list">
         <?php
@@ -98,7 +98,7 @@ if($login == 0){
         <?php
         }
         ?>
-        <!--
+        
         <li class="chats-item">
           <div class="chats-item-button js-chat-button" role="button" tabindex="0">
             <img class="profile-image" src="https://pbs.twimg.com/profile_images/507217425/rachelbyserge_400x400.jpg" alt="Rachel Bratt Tannenbaum">
@@ -115,7 +115,7 @@ if($login == 0){
             </div>
           </div>
         </li>
-        -->
+       
 
       </ul>
     </section>
@@ -159,7 +159,7 @@ if($login == 0){
             DEVELOP BY DVLPR
           </p>          
         </li>
-        <!--
+        
         <li class="common-message is-you">
           <p class="common-message-content">
             Just take a look
@@ -173,11 +173,11 @@ if($login == 0){
           </p>
           <time datetime>14:33</time>          
         </li>
-        -->
+       
       </ol>
     </div>    
     <div class="message-box">
-      <!-- <button class="common-button"><span class="icon">😃</span></button> -->
+      <button class="common-button"><span class="icon">😃</span></button>
         <input class="text-input pesan" id="message-box" placeholder="Type a message" contenteditable required>
         <input type="hidden" class="nomor">
         <button id="voice-button" class="common-button send-button" type="submit"><span class="icon">➤</span></button>
